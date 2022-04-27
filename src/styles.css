@@ -82,3 +82,11 @@ body{
 .nio-scrollbar-gray::-webkit-scrollbar-thumb:window-inactive {
   background: lightgrey;
 }
+
+.redClass{
+  color: #ff0000;
+}
+
+.greenClass{
+  color: #41c441;
+}
