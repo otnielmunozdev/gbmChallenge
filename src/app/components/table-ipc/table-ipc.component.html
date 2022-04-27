@@ -4,8 +4,8 @@
     <div *ngIf="(ipcData.length === 0 || ipcData === null) && !loader">
       No results!
     </div>
-    <div *ngIf="(ipcData.length !== 0 && ipcData !== null) && !loader" class="tableContainer nio-scrollbar-gray" style="overflow-x: hidden;">
-      <table class="table table-hover table-dark">
+    <div *ngIf="(ipcData.length !== 0 && ipcData !== null) && !loader" class="tableContainer nio-scrollbar-gray" >
+      <table datatable [dtOptions]="dtOptions" class="row-border hover" >
         <thead>
           <tr>
               <th>Date</th>
