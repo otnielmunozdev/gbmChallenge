@@ -1,0 +1,55 @@
+tbody tr:hover {
+    color: #000;
+}
+
+.tableContainer {
+    height: calc(80vh - 200px);
+    margin-top: 14px;
+    padding: 0px 15px 15px 0px;
+}
+
+
+table.dataTable tbody tr {
+    background-color: transparent;
+}
+
+table.dataTable.display tbody tr:hover>.sorting_1,
+
+table.dataTable.order-column.hover tbody tr:hover>.sorting_1,
+
+tbody tr:hover {
+    background-color: #FFF !important;
+    color: #000;
+}
+
+@media screen and (min-height: 743px) and (max-height: 821px) {
+    .tableContainer {
+        height: calc(78vh - 200px);
+    }
+}
+
+@media screen and (min-height: 688px) and (max-height: 742px) {
+    .tableContainer {
+        height: calc(76vh - 200px);
+    }
+}
+
+@media screen and (min-height: 674px) and (max-height: 687px) {
+    .tableContainer {
+        height: calc(73vh - 200px);
+    }
+}
+
+
+@media screen and (min-height: 590px) and (max-height: 673px) {
+    .tableContainer {
+        height: calc(72vh - 200px);
+    }
+}
+
+
+@media screen and (min-height: 560px) and (max-height: 590px) {
+    .tableContainer {
+        height: calc(70vh - 200px);
+    }
+}

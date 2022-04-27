@@ -1,41 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
 
-body{
+body {
   background-image: url("src/assets/imgs/finanzasFondo.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 * {
-    font-family: 'Montserrat', sans-serif;
-  }
-  .w100 {
-    font-weight: 100;
-  }
-  .w200 {
-    font-weight: 200;
-  }
-  .w300 {
-    font-weight: 300;
-  }
-  .w400 {
-    font-weight: 400;
-  }
-  .w500 {
-    font-weight: 500;
-  }
-  .w600 {
-    font-weight: 600;
-  }
-  .w700 {
-    font-weight: 700;
-  }
-  .w800 {
-    font-weight: 800;
-  }
-  .w900 {
-    font-weight: 900;
-  }
+  font-family: 'Montserrat', sans-serif;
+}
+
+.w100 {
+  font-weight: 100;
+}
+
+.w200 {
+  font-weight: 200;
+}
+
+.w300 {
+  font-weight: 300;
+}
+
+.w400 {
+  font-weight: 400;
+}
+
+.w500 {
+  font-weight: 500;
+}
+
+.w600 {
+  font-weight: 600;
+}
+
+.w700 {
+  font-weight: 700;
+}
+
+.w800 {
+  font-weight: 800;
+}
+
+.w900 {
+  font-weight: 900;
+}
 
 
 .nio-scrollbar,
@@ -81,4 +90,30 @@ body{
 
 .nio-scrollbar-gray::-webkit-scrollbar-thumb:window-inactive {
   background: lightgrey;
+}
+
+.redClass {
+  color: #ff0000;
+}
+
+.greenClass {
+  color: #41c441;
+}
+
+
+#DataTables_Table_0_filter,
+#DataTables_Table_0_info,
+#DataTables_Table_0_first,
+#DataTables_Table_0_previous,
+#DataTables_Table_0_next,
+#DataTables_Table_0_last {
+  color: #FFF !important;
+}
+
+#DataTables_Table_0_length {
+  color: #737373 !important;
+}
+
+tbody .dataTables_empty {
+  color: #000;
 }
