@@ -117,3 +117,7 @@ body {
 tbody .dataTables_empty {
   color: #000;
 }
+
+.mouseNotAllowed{
+  cursor: not-allowed !important;
+}

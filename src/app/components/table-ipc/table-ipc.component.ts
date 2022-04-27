@@ -34,6 +34,7 @@ export class TableIPCComponent implements OnInit, OnDestroy {
     this.ipcService.getIpc().subscribe(ipc => {
       this.ipcData = ipc;
     }, (error) => {
+      this.loader = false;
       console.error("Error getIPC", error);
     }, () => {
       this.loader = false;

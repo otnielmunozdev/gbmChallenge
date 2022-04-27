@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+//colors
+$red: #E1332D;
+$white: #fff;
+
+// Button wrap
+.containerButtons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+//default button
+.btn {
+    color: #fff;
+    cursor: pointer;
+    // display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 0 2em;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+
+    @media(min-width: 600px) {
+        margin: 0 1em 2em;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+/////////////////////////////
+//button-4 
+///////////////////////////
+.btn-4 {
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+
+    span {
+        z-index: 20;
+    }
+
+    &:after {
+        background: #FFF;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: .50;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+        z-index: 2;
+    }
+}
+
+.btn-4:hover {
+    &:after {
+        left: 120%;
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+}
+
+
+.tableButton {
+    text-align: center;
+    width: 150px;
+    height: 35px;
+    line-height: 22px;
+    margin: 0px;
+    background-color: transparent !important;
+}
