@@ -1,3 +1,8 @@
 <app-extra-info></app-extra-info>
 
-<app-table-ipc></app-table-ipc>
+<div class="containerButtons">
+    <button class="btn btn-4 tableButton" (click)="typeView()" [disabled]="dataTypeView" [ngClass]="{'mouseNotAllowed': dataTypeView}">IPC Table</button>
+    <button class="btn btn-4 tableButton"  (click)="typeView()"[disabled]="!dataTypeView" [ngClass]="{'mouseNotAllowed': !dataTypeView}">IPC Graphic</button>
+</div>
+
+<app-table-ipc *ngIf="dataTypeView"></app-table-ipc>
