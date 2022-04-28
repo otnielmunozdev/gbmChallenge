@@ -8,12 +8,11 @@ import { IpcService } from 'src/app/services/ipc.service';
   templateUrl: './table-ipc.component.html',
   styleUrls: ['./table-ipc.component.css']
 })
-export class TableIPCComponent implements OnInit, OnDestroy {
+export class TableIPCComponent implements OnInit {
 
   ipcData: IPC[] = [];
   loader: boolean = true;
   dtOptions: DataTables.Settings = {};
-  dtTrigger: Subject<any> = new Subject<any>();
 
   constructor(private ipcService: IpcService) { }
 
@@ -41,8 +40,5 @@ export class TableIPCComponent implements OnInit, OnDestroy {
     });
   }
 
-  ngOnDestroy(): void {
-    this.dtTrigger.unsubscribe();
-  }
 
 }

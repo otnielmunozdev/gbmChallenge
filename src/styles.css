@@ -100,17 +100,23 @@ body {
   color: #41c441;
 }
 
-
-#DataTables_Table_0_filter,
+.dataTables_filter,
+.paginate_button,
+.dataTables_paginate,
 #DataTables_Table_0_info,
 #DataTables_Table_0_first,
 #DataTables_Table_0_previous,
 #DataTables_Table_0_next,
-#DataTables_Table_0_last {
+#DataTables_Table_0_last,
+#DataTables_Table_1_info,
+#DataTables_Table_1_first,
+#DataTables_Table_1_previous,
+#DataTables_Table_1_next,
+#DataTables_Table_1_last {
   color: #FFF !important;
 }
 
-#DataTables_Table_0_length {
+.dataTables_length {
   color: #737373 !important;
 }
 
@@ -118,6 +124,6 @@ tbody .dataTables_empty {
   color: #000;
 }
 
-.mouseNotAllowed{
+.mouseNotAllowed {
   cursor: not-allowed !important;
 }

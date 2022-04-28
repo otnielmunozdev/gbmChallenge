@@ -1,0 +1,15 @@
+<div class="containerPrin">
+    <app-loader *ngIf="loader"></app-loader>
+    <div *ngIf="(ipcData.length === 0 || ipcData === null) && !loader">
+        No results!
+    </div>
+    <div *ngIf="(ipcData.length !== 0 && ipcData !== null) && !loader">
+        <div>
+            <plotly-plot [data]="graphic.data" [layout]="graphic.layout"></plotly-plot>
+            <div class="containerPrices">
+                <span class="greenClass">{{ priceMax | currency:"MXN":"symbol" }}</span>
+                <span class="redClass">{{ priceMin | currency:"MXN":"symbol" }}</span>
+            </div>
+        </div>
+    </div>
+</div>
