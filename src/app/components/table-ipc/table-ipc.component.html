@@ -1,7 +1,7 @@
 <div>
     <app-loader *ngIf="loader"></app-loader>
     <div *ngIf="(ipcData.length === 0 || ipcData === null) && !loader">
-      No results!
+      <app-no-results></app-no-results>
     </div>
     <div *ngIf="(ipcData.length !== 0 && ipcData !== null) && !loader" class="tableContainer nio-scrollbar-gray" id="containerTable">
       <table datatable [dtOptions]="dtOptions" class="row-border hover" >

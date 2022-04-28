@@ -5,7 +5,7 @@ import { HomeComponent } from './home.component';
 import { ExtraInfoModule } from '../extra-info/extra-info.module';
 import { TableIPCModule } from '../table-ipc/table-ipc.module';
 import { GraphicIPCModule } from '../graphic-ipc/graphic-ipc.module';
-import { NotificationModule } from 'src/app/shared/notification/notification.module';
+import { NotificationModule } from 'src/app/shared/components/notification/notification.module';
 
 @NgModule({
   declarations: [

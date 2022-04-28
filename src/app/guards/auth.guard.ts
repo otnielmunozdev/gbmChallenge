@@ -13,6 +13,10 @@ export class AuthGuard implements CanActivate {
     
   }
 
+  /*  This guard helps us to verified if the user is authenticated
+      and if it's false the route sends us to the home
+  */
+
   canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean>  | boolean {
