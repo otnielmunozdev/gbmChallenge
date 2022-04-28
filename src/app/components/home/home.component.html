@@ -1,9 +1,8 @@
 <app-extra-info></app-extra-info>
-
+<app-notification *ngIf="showNotification"></app-notification>
 <div class="containerButtons">
     <button class="btn btn-4 tableButton" (click)="typeView()" [disabled]="dataTypeView" [ngClass]="{'mouseNotAllowed': dataTypeView}">IPC Table</button>
-    <button class="btn btn-4 tableButton"  (click)="typeView()"[disabled]="!dataTypeView" [ngClass]="{'mouseNotAllowed': !dataTypeView}">IPC Graphic</button>
+    <button class="btn btn-4 tableButton"  (click)="typeView()"[disabled]="!dataTypeView" [ngClass]="{'mouseNotAllowed': !dataTypeView}">IPC Graph</button>
 </div>
-
 <app-table-ipc *ngIf="dataTypeView"></app-table-ipc>
 <app-graphic-ipc *ngIf="!dataTypeView"></app-graphic-ipc>

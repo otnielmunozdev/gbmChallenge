@@ -9,6 +9,7 @@ import { AuthService } from '@auth0/auth0-angular';
 export class HomeComponent implements OnInit {
 
   dataTypeView:boolean = true;
+  showNotification: boolean = false;
 
   constructor(public authService: AuthService) { }
 
@@ -16,11 +17,17 @@ export class HomeComponent implements OnInit {
   }
 
   typeView(){
+    this.showNotification = false;
     this.authService.isAuthenticated$.subscribe((datum)=>{
       if(datum){
         this.dataTypeView = !this.dataTypeView;
         console.log("Access Allowed");
       } else {
+        this.showNotification = true;
+        setTimeout(() => {
+    this.showNotification = false;
+          
+        }, 4000);
         console.log("Access Denied");
       }
     });
