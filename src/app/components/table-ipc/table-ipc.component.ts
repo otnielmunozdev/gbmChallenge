@@ -1,6 +1,5 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Subject } from 'rxjs';
-import { IPC } from 'src/app/classes/ipc.class';
+import { Component, OnInit } from '@angular/core';
+import { IPC } from 'src/app/models/ipc.model';
 import { IpcService } from 'src/app/services/ipc.service';
 
 @Component({
