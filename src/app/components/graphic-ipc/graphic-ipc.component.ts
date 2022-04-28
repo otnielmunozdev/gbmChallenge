@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { IPC } from 'src/app/classes/ipc.class';
 import { IpcService } from 'src/app/services/ipc.service';
 
