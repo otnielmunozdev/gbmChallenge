@@ -6,13 +6,18 @@ For this challange I created a web application with `Angular`
 It uses a previously created API of the IPC (Índice de Precios y Cotizaciones) from https://run.mocky.io/v3/cc4c350b-1f11-42a0-a1aa-f8593eafeb1e
 
 
-I implemented a `datatable` with "Angular Datatables" https://l-lin.github.io/angular-datatables/#/welcome
+I implemented a `datatable` with Angular Datatables https://l-lin.github.io/angular-datatables/#/welcome
 
 
 It has a `graph` with the data, it was created with Plotly JS https://plotly.com/javascript/
 
 
-I implemented a login with `Auth0` for the authentication https://auth0.com/docs
+I implemented a `login` with Auth0 for the authentication https://auth0.com/docs
+
+###Details
+
+You're going to see the home page, you will see two buttons, previously the table button with the API information is selected, the information of the graph is restricted only for logged in users and the route /graph, you can login with the login button of the header, which will It will take you to the Auth0 login, once logged in you can access to the graph and you will see your information in the header
+
 ```shell
 Important: If you want to see he graph you must be logged in , you can use these credentials or sign up:
 - email: gbmchallenge@gmail.com
@@ -71,5 +76,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ### Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Notes
+
+If you have any questions or suggestions I'm happy to hear them, feel free to leave any comments or suggest changes.
+
 
 
