@@ -1,32 +1,129 @@
 /* You can add global styles to this file, and also import other style files */
 
+body {
+  background-image: url("src/assets/imgs/finanzasFondo.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 * {
-    font-family: 'Montserrat', sans-serif;
-  }
-  .w100 {
-    font-weight: 100;
-  }
-  .w200 {
-    font-weight: 200;
-  }
-  .w300 {
-    font-weight: 300;
-  }
-  .w400 {
-    font-weight: 400;
-  }
-  .w500 {
-    font-weight: 500;
-  }
-  .w600 {
-    font-weight: 600;
-  }
-  .w700 {
-    font-weight: 700;
-  }
-  .w800 {
-    font-weight: 800;
-  }
-  .w900 {
-    font-weight: 900;
-  }
+  font-family: 'Montserrat', sans-serif;
+}
+
+.w100 {
+  font-weight: 100;
+}
+
+.w200 {
+  font-weight: 200;
+}
+
+.w300 {
+  font-weight: 300;
+}
+
+.w400 {
+  font-weight: 400;
+}
+
+.w500 {
+  font-weight: 500;
+}
+
+.w600 {
+  font-weight: 600;
+}
+
+.w700 {
+  font-weight: 700;
+}
+
+.w800 {
+  font-weight: 800;
+}
+
+.w900 {
+  font-weight: 900;
+}
+
+
+.nio-scrollbar,
+[class*=" nio-scrollbar"],
+[class^="nio-scrollbar"] {
+  overflow: auto;
+}
+
+[class*=" nio-scrollbar"]::-webkit-scrollbar,
+[class^="nio-scrollbar"]::-webkit-scrollbar {
+  width: 5px;
+  height: 6px;
+}
+
+.nio-scrollbar-invisible::-webkit-scrollbar {
+  display: none;
+}
+
+/* Track */
+[class*=" nio-scrollbar"]::-webkit-scrollbar-track,
+[class^="nio-scrollbar"]::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+[class*=" nio-scrollbar"]::-webkit-scrollbar-thumb,
+[class^="nio-scrollbar"]::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background: #50BB82;
+}
+
+[class*=" nio-scrollbar"]::-webkit-scrollbar-thumb:window-inactive,
+[class^="nio-scrollbar"]::-webkit-scrollbar-thumb:window-inactive {
+  background: #50BB82;
+}
+
+.nio-scrollbar-gray::-webkit-scrollbar-thumb {
+  background: lightgrey;
+}
+
+.nio-scrollbar-gray::-webkit-scrollbar-thumb:window-inactive {
+  background: lightgrey;
+}
+
+.redClass {
+  color: #ff0000;
+}
+
+.greenClass {
+  color: #41c441;
+}
+
+.dataTables_filter,
+.paginate_button,
+.dataTables_paginate,
+#DataTables_Table_0_info,
+#DataTables_Table_0_first,
+#DataTables_Table_0_previous,
+#DataTables_Table_0_next,
+#DataTables_Table_0_last,
+#DataTables_Table_1_info,
+#DataTables_Table_1_first,
+#DataTables_Table_1_previous,
+#DataTables_Table_1_next,
+#DataTables_Table_1_last {
+  color: #FFF !important;
+}
+
+.dataTables_length {
+  color: #737373 !important;
+}
+
+tbody .dataTables_empty {
+  color: #000;
+}
+
+.mouseNotAllowed {
+  cursor: not-allowed !important;
+}

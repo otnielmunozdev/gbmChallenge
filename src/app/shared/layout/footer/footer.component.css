@@ -1,0 +1,22 @@
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gitHubImg {
+    width: 40px;
+}
+
+.divEmail {
+    margin-left: 10px;
+}
+
+.divLinks {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 489px) {
+    .divEmail span {
+        display: none;
+    }
+}
