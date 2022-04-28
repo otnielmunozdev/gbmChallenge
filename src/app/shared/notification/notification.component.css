@@ -1,0 +1,12 @@
+.alertInfo {
+    position: absolute;
+    margin-top: -212px;
+    z-index: 1000;
+    text-align: center;
+}
+
+.containerAlert {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
