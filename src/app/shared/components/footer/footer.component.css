@@ -14,9 +14,3 @@
 .divLinks {
     margin-right: 20px;
 }
-
-@media screen and (max-width: 489px) {
-    .divEmail span {
-        display: none;
-    }
-}
