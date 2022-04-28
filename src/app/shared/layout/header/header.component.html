@@ -2,11 +2,13 @@
   <div class="navbarContainer">
       <div class="containerLogo">
           <img src="../../../assets/imgs/gbmlogo.jpg" alt="GBMLogo" (click)="goHome()" class="logo">
-          <!-- <span (click)="goHome()"class=" textFilter btn btn-2">GBMCHALLENGE IPC</span> -->
+          <span *ngIf="authService.user$ | async as user" class="textFilter btn">Welcome {{user.nickname}} </span>
       </div>
       <div class="containerAutentication">
-        <a class="btn btn-5 authButton">Login</a> 
-        <!-- <a class="btn btn-5 authButton">Logout</a>  -->
+        <a class="btn btn-5 authButton" (click)="loginWithRedirect()"
+           *ngIf="!(authService.isAuthenticated$ | async)">Login</a> 
+        <a class="btn btn-5 authButton" (click)="logout()" 
+           *ngIf="(authService.isAuthenticated$ | async)">Logout</a> 
       </div>
   </div>
 </nav>

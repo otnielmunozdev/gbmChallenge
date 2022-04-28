@@ -18,20 +18,8 @@
     justify-content: space-between;
 }
 
-.textFilter {
-    color: #FFF;
-    font-weight: 600;
-    cursor: pointer;
-    margin: 0px 26px;
-}
-
-// .textFilter:hover {
-//     color: #1d9691;
-// }
-
 .containerLogo {
     width: 50%;
-
 }
 
 .logo {
@@ -52,13 +40,11 @@
     margin-right: 19px !important;
 }
 
-
 @media screen and (max-width: 530px) {
     .textFilter {
         display: none;
     }
 }
-
 
 // Main wrap
 .buttons {
@@ -141,15 +127,10 @@ p {
     }
 }
 
-//button styles
 
-
-//default button
 .btn {
     color: #fff;
     cursor: pointer;
-    // display: block;
-    //   font-size:16px;
     font-weight: 400;
     line-height: 45px;
     margin: 0 0;
@@ -159,116 +140,9 @@ p {
     text-transform: uppercase;
     width: 38%;
 
-
-
-    @media(min-width: 600px) {
-
-        // margin: 0 1em 2em;
-    }
-
     &:hover {
         text-decoration: none;
     }
-
-}
-
-/////////////////////////////////
-//button one
-///////////////////////////////
-.btn-1 {
-    background: darken($red, 1.5%);
-    font-weight: 100;
-
-    svg {
-        height: 45px;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
-    }
-
-    rect {
-        fill: none;
-        stroke: #fff;
-        stroke-width: 2;
-        stroke-dasharray: 422, 0;
-        transition: all 0.35s linear;
-    }
-}
-
-.btn-1:hover {
-    background: rgba($red, 0);
-    //   font-weight: 900;
-    letter-spacing: 1px;
-
-    rect {
-        stroke-width: 5;
-        stroke-dasharray: 15, 310;
-        stroke-dashoffset: 48;
-        transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-    }
-}
-
-////////////////////////////
-//button two
-//////////////////////////
-.btn-2 {
-    letter-spacing: 0;
-
-}
-
-.btn-2:hover,
-.btn-2:active {
-    //   letter-spacing: 5px;
-}
-
-.btn-2:after,
-.btn-2:before {
-    backface-visibility: hidden;
-    border: 1px solid rgba(#fff, 0);
-    bottom: 0px;
-    content: " ";
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    transition: all 280ms ease-in-out;
-    width: 0;
-}
-
-.btn-2:hover:after,
-.btn-2:hover:before {
-    backface-visibility: hidden;
-    border-color: #fff;
-    transition: width 350ms ease-in-out;
-    width: 100%;
-}
-
-.btn-2:hover:before {
-    bottom: auto;
-    top: 0;
-    width: 100%;
-}
-
-/////////////////////////////
-//button -3 
-///////////////////////////
-.btn-3 {
-    background: lighten($red, 3%);
-    border: 1px solid darken($red, 4%);
-    box-shadow: 0px 2px 0 darken($red, 5%), 2px 4px 6px darken($red, 2%);
-    font-weight: 900;
-    letter-spacing: 1px;
-    transition: all 150ms linear;
-}
-
-.btn-3:hover {
-    background: darken($red, 1.5%);
-    border: 1px solid rgba(#000, .05);
-    box-shadow: 1px 1px 2px rgba(#fff, .2);
-    color: lighten($red, 18%);
-    text-decoration: none;
-    text-shadow: -1px -1px 0 darken($red, 9.5%);
-    transition: all 250ms linear;
 }
 
 /////////////////////////////
@@ -326,4 +200,14 @@ p {
     outline-color: rgba(255, 255, 255, 0);
     outline-offset: 15px;
     text-shadow: 1px 1px 2px #427388;
+}
+
+.textFilter {
+    color: #FFF;
+    font-weight: 600;
+    cursor: pointer;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    line-height: 16px;
+    width: auto;
 }
