@@ -3,7 +3,6 @@
     height: 100vh;
     background-color: #000000e0;
     color: #FFF;
-    /* height: 100vh; */
 }
 
 app-footer {
@@ -16,24 +15,3 @@ app-footer {
     left:0;
     width:100%;
 }
-
-/* 
-@media screen and (max-width: 772px) {
-    .container{
-        height: 137vh;
-    }
-}
-
-
-@media screen and (max-height: 640px) {
-    .container{
-        height: 152vh;
-    }
-}
-
-
-@media screen and (max-height: 640px) and (max-width: 800px)  {
-    .container{
-        height: 252vh;
-    }
-} */
