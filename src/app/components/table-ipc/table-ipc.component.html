@@ -3,7 +3,7 @@
     <div *ngIf="(ipcData.length === 0 || ipcData === null) && !loader">
       No results!
     </div>
-    <div *ngIf="(ipcData.length !== 0 && ipcData !== null) && !loader" class="tableContainer nio-scrollbar-gray" >
+    <div *ngIf="(ipcData.length !== 0 && ipcData !== null) && !loader" class="tableContainer nio-scrollbar-gray" id="containerTable">
       <table datatable [dtOptions]="dtOptions" class="row-border hover" >
         <thead>
           <tr>
