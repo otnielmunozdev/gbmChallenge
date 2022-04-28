@@ -16,7 +16,7 @@ I implemented a `login` with Auth0 for the authentication https://auth0.com/docs
 
 ### Details
 
-You're going to see the home page, you will see two buttons, previously the table button with the API information is selected, the information of the graph is restricted only for logged in users and the route /graph, you can login with the login button of the header, which will It will take you to the Auth0 login, once logged in you can access to the graph and you will see your information in the header
+You're going to see the home page, you will see two buttons, previously the table button with the API information is selected, the information of the graph is restricted only for logged in users and the route /graph, you can login with the login button of the header, which It will take you to the Auth0 login, once you logged in, you can access to the graph and you will see your information in the header
 
 ```shell
 Important: If you want to see he graph you must be logged in , you can use these credentials or sign up:
