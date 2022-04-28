@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Graph } from 'src/app/classes/graph.class';
-import { IPC } from 'src/app/classes/ipc.class';
+import { Graph } from 'src/app/models/graph.model';
+import { IPC } from 'src/app/models/ipc.model';
 import { IpcService } from 'src/app/services/ipc.service';
 
 
