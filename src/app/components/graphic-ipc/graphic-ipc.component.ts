@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Graph } from 'src/app/classes/graph.class';
 import { IPC } from 'src/app/classes/ipc.class';
 import { IpcService } from 'src/app/services/ipc.service';
 
@@ -16,59 +17,7 @@ export class GraphicIPCComponent implements OnInit {
   loader: boolean = true;
   time: string[] = [];
   prices: number[] = [];
-
-  graphic = {
-    data: [
-      {
-        x: this.time,
-        y: this.prices,
-        fill: '',
-        fillcolor: '',
-        line: {
-          color: ''
-        },
-        mode: '',
-        type: ''
-      },
-    ],
-    layout: {
-      xaxis: {
-        title: ''
-      },
-      yaxis: {
-        range: [this.priceMin, this.priceMax],
-        title: ''
-      },
-      shapes: [
-        {
-          type: '',
-          xref: '',
-          x0: 0,
-          y0: this.priceMax,
-          x1: 1,
-          y1: this.priceMax,
-          line: {
-            color: '',
-            width: 0,
-            dash: ''
-          }
-        },
-        {
-          type: '',
-          xref: '',
-          x0: 0,
-          y0: this.priceMin,
-          x1: 0,
-          y1: this.priceMin,
-          line: {
-            color: '',
-            width: 0,
-            dash: ''
-          }
-        }
-      ]
-    }
-  };
+  graphic: Graph = new Graph();
 
   constructor(private ipcService: IpcService) { }
 

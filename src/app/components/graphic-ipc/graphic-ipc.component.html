@@ -1,7 +1,7 @@
 <div class="containerPrin">
     <app-loader *ngIf="loader"></app-loader>
     <div *ngIf="(ipcData.length === 0 || ipcData === null) && !loader">
-        No results!
+        <app-no-results></app-no-results>
     </div>
     <div *ngIf="(ipcData.length !== 0 && ipcData !== null) && !loader">
         <div>

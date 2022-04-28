@@ -11,6 +11,9 @@ export class HomeComponent implements OnInit {
   dataTypeView:boolean = true;
   showNotification: boolean = false;
 
+  title: string = "Please Login!";
+  message: string = "If you want to see the graph, please login!";
+
   constructor(public authService: AuthService) { }
 
   ngOnInit(): void {
