@@ -61,7 +61,13 @@ Use `npm install` to install the modules that are needed for this project
 ###  Run the app:
 
 Use `ng serve` or if you have problems to run the app you can use 
-`node --max_old_space_size=8048 ./node_modules/@angular/cli/bin/ng serve` and navigate to `http://localhost:4200/`. 
+`node --max_old_space_size=8048 ./node_modules/@angular/cli/bin/ng serve`
+
+#### Important
+
+```shell
+Navigate to `http://localhost:4200/`. 
+```
 The app will automatically reload if you change any of the source files. 
 
 ### To build and rise the server:
