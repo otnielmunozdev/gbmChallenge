@@ -1,11 +1,53 @@
-# GbmChallenge
+# GBM Front-end Developer Challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+For this challange I created a web application with Angular and Auth0 for the authentication https://auth0.com/docs .
+It uses a previously created API of the IPC (Índice de Precios y Cotizaciones) from https://run.mocky.io/v3/cc4c350b-1f11-42a0-a1aa-f8593eafeb1e .
+I implemented a datatable with "Angular Datatables" https://l-lin.github.io/angular-datatables/#/welcome , 
+and it has a graph with the data, it was created with Plotly JS https://plotly.com/javascript/ .
+And Bootstrap https://getbootstrap.com/
 
-## Development server
+# App Versions
+Angular CLI: 13.1.4
+Node: 14.17.0
+Package Manager: npm 6.14.13
+Angular: 13.1.3
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Package                         Version
+---------------------------------------------------------
+@angular-devkit/architect       0.1301.4
+@angular-devkit/build-angular   13.1.4
+@angular-devkit/core            13.1.4
+@angular-devkit/schematics      13.1.4
+@angular/cli                    13.1.4
+@schematics/angular             13.1.4
+rxjs                            7.4.0
+typescript                      4.5.5
 
+# Installation
+
+## It is necessary download NodeJS
+```shell
+`https://nodejs.org/`
+```
+## Clone the repository
+
+use git clone `https://github.com/otnielmunozdev/gbmChallenge.git` to download the project.
+when it finishes go into to the created folder.
+
+## Installation of dependencies
+
+use `npm install` to install the modules that are needed for this project
+
+##  Run the app:
+
+use `ng serve` or if you have problems to run the app you can use 
+`node --max_old_space_size=8048 ./node_modules/@angular/cli/bin/ng serve` and navigate to `http://localhost:4200/`. 
+The app will automatically reload if you change any of the source files. 
+
+## To build and rise the server:
+```shell
+`npm run start`
+```
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
