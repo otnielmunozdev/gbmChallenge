@@ -4,7 +4,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/layout/header/header.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
+import { FooterComponent } from './shared/components/layout/footer/footer.component';
 import { AuthModule } from '@auth0/auth0-angular';
 @NgModule({
   declarations: [
