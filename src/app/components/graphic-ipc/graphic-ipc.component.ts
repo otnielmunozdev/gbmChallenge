@@ -29,16 +29,16 @@ export class GraphicIPCComponent implements OnInit {
   layoutYTitle: string = 'Price';
   layoutShapesType: string = 'line';
   layoutShapesXref: string = 'paper';
-  shapeLine1X0:number = 0;
-  shapeLine1X1:number = 1;
-  shapeLine2X0:number = 0;
-  shapeLine2X1:number = 1;
-  widthLine1:number = 2.5;
-  widthLine2:number = 2.5;
-  shapeLine1Color:string = '#00c800';
-  shapeLine2Color:string = '#c80000';
-  shapeLine1Dash:string = 'dot';
-  shapeLine2Dash:string = 'dot';
+  shapeLine1X0: number = 0;
+  shapeLine1X1: number = 1;
+  shapeLine2X0: number = 0;
+  shapeLine2X1: number = 1;
+  widthLine1: number = 2.5;
+  widthLine2: number = 2.5;
+  shapeLine1Color: string = '#00c800';
+  shapeLine2Color: string = '#c80000';
+  shapeLine1Dash: string = 'dot';
+  shapeLine2Dash: string = 'dot';
 
   constructor(private ipcService: IpcService) { }
 
