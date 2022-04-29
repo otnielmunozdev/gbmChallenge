@@ -45,7 +45,7 @@ Package                         Version
 
 ## Installation
 
-### It is necessary download NodeJS
+### It's necessary download NodeJS
 ```shell
 https://nodejs.org/
 ```
