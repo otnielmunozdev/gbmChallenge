@@ -18,6 +18,27 @@ export class GraphicIPCComponent implements OnInit {
   time: string[] = [];
   prices: number[] = [];
   graphic: Graph = new Graph();
+  fill: string = "tonexty";
+  fillColor: string = "#ffffff61";
+  lineColor: string = "#FFF";
+  modeGraph: string = 'lines+points';
+  typeGraph: string = 'scatter';
+  nameDataGraph: string = "Price (MXN)";
+  bgColorLayout: string = "#00000036";
+  layoutXTitle: string = 'Time';
+  layoutYTitle: string = 'Price';
+  layoutShapesType: string = 'line';
+  layoutShapesXref: string = 'paper';
+  shapeLine1X0:number = 0;
+  shapeLine1X1:number = 1;
+  shapeLine2X0:number = 0;
+  shapeLine2X1:number = 1;
+  widthLine1:number = 2.5;
+  widthLine2:number = 2.5;
+  shapeLine1Color:string = '#00c800';
+  shapeLine2Color:string = '#c80000';
+  shapeLine1Dash:string = 'dot';
+  shapeLine2Dash:string = 'dot';
 
   constructor(private ipcService: IpcService) { }
 
@@ -48,54 +69,53 @@ export class GraphicIPCComponent implements OnInit {
     let data = [{
       x: this.time,
       y: this.prices,
-      fill: 'tonexty',
-      fillcolor: '#ffffff61',
+      fill: this.fill,
+      fillcolor: this.fillColor,
       line: {
-        color: '#FFF'
+        color: this.lineColor
       },
-      mode: 'lines+points',
-      type: 'scatter',
-      name: "Price (MXN)"
+      mode: this.modeGraph,
+      type: this.typeGraph,
+      name: this.nameDataGraph
     }];
     let layout = {
-      plot_bgcolor: "#00000036",
-      paper_bgcolor: "#00000036",
+      plot_bgcolor: this.bgColorLayout,
+      paper_bgcolor: this.bgColorLayout,
       xaxis: {
-        title: 'Time'
+        title: this.layoutXTitle
       },
       yaxis: {
         range: [
           this.priceMin - margen,
           this.priceMax + margen
         ],
-        title: 'Price',
-        name: "dasd"
+        title: this.layoutYTitle,
       },
       shapes: [
         {
-          type: 'line',
-          xref: 'paper',
-          x0: 0,
+          type: this.layoutShapesType,
+          xref: this.layoutShapesXref,
+          x0: this.shapeLine1X0,
           y0: this.priceMax,
-          x1: 1,
+          x1: this.shapeLine1X1,
           y1: this.priceMax,
           line: {
-            color: '#00c800',
-            width: 2.5,
-            dash: 'dot'
+            color: this.shapeLine1Color,
+            width: this.widthLine1,
+            dash: this.shapeLine1Dash
           }
         },
         {
-          type: 'line',
-          xref: 'paper',
-          x0: 0,
+          type: this.layoutShapesType,
+          xref: this.layoutShapesXref,
+          x0: this.shapeLine2X0,
           y0: this.priceMin,
-          x1: 1,
+          x1: this.shapeLine2X1,
           y1: this.priceMin,
           line: {
-            color: '#c80000',
-            width: 2.5,
-            dash: 'dot'
+            color: this.shapeLine2Color,
+            width: this.widthLine2,
+            dash: this.shapeLine2Dash
           },
         }
       ],
