@@ -47,18 +47,22 @@ export class GraphicIPCComponent implements OnInit {
   }
 
   getICP() {
-    this.ipcService.getIpc().subscribe(ipc => {
-      this.ipcData = ipc;
-      this.ipcData.forEach((data) => {
-        this.time.push(data.date);
-        this.prices.push(data.price);
-      });
-      this.graphicCreate();
-    }, (error) => {
-      this.loader = false;
-      console.error("Error getIPC", error);
-    }, () => {
-      this.loader = false;
+    this.ipcService.getIpc().subscribe({
+      next: (ipc) => {
+        this.ipcData = ipc;
+        this.ipcData.forEach((data) => {
+          this.time.push(data.date);
+          this.prices.push(data.price);
+        });
+        this.graphicCreate();
+      },
+      error: (error) => {
+        this.loader = false;
+        console.error("Error getIPC", error);
+      },
+      complete: () => {
+        this.loader = false;
+      }
     });
   }
 
