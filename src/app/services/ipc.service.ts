@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { IPC } from '../models/ipc.model';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
@@ -9,12 +10,10 @@ import { IPC } from '../models/ipc.model';
 })
 export class IpcService {
 
-  url = "https://run.mocky.io/v3";
-
   constructor(private http: HttpClient) { }
 
   getIpc(): Observable<IPC[]> {
-    return this.http.get<IPC[]>(`${this.url}/cc4c350b-1f11-42a0-a1aa-f8593eafeb1e`);
+    return this.http.get<IPC[]>(`${environment.urlAPI}/cc4c350b-1f11-42a0-a1aa-f8593eafeb1e`);
   }
   
 }
